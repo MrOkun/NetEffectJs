@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MrOkun's Web Net Effect</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="initialize()">
+        <script src="javascript/main.js"></script>
+
+        <p id="info" class="info"></p>
+
+        <canvas id="canvas" width="1024", height="1024"></canvas><br>     
+        
+        <div>
+            <label for="points-count">Points Count :</label>
+            <input type="range" id="input-points-count" name="points-count" value="10" min="0" max="35">
+        </div>
+
+        <div>
+            <label for="fade-distance">Fade Distance :</label>
+            <input type="range" id="input-fade-distance" name="fade-distance" value="255" min="0" max="1000">
+        </div>
+
+        <div>
+            <label for="radius">Radius :</label>
+            <input type="range" id="input-radius" name="radius" value="15" min="8" max="50">
+        </div>
+
+        <div>
+            <label for="line-width">Line Widht :</label>
+            <input type="range" id="input-line-width" name="line-width" value="40" min="0" max="150">
+        </div>
+        
+        <div>
+            <label for="point-color">Point Color :</label><br>
+            <input type="range" id="input-point-color-r" name="point-color" value="255" min="0" max="255">
+            <input type="range" id="input-point-color-g" name="point-color" value="255" min="0" max="255">
+            <input type="range" id="input-point-color-b" name="point-color" value="255" min="0" max="255">
+        </div>
+
+        <div>
+            <label for="line-color">Line Color :</label><br>
+            <input type="range" id="input-line-color-r" name="line-color" value="104" min="0" max="255">
+            <input type="range" id="input-line-color-g" name="line-color" value="91" min="0" max="255">
+            <input type="range" id="input-line-color-b" name="line-color" value="165" min="0" max="255">
+        </div>
+
+        <button type="button" onclick="generatePoints();"><p class="redraw-button">Redraw Points</p></button>
+        
+    </body>
+</html>
